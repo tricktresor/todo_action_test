@@ -1,4 +1,5 @@
 name: "todo2issue"
+uses: alstr/todo-to-issue-action@v2.1
 on: ["push"]
 jobs:
   build:
