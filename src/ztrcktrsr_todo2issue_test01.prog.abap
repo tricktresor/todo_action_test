@@ -11,6 +11,7 @@ START-OF-SELECTION.
    WHERE sprsl IN @s_spras
      and spras  = @sy-langu.
 
+  "new comment test
   LOOP AT langs INTO DATA(lang). "TODO use ALV grid for display
     WRITE: / lang-sptxt.
   ENDLOOP.
