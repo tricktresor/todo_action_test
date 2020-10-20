@@ -2,7 +2,7 @@ REPORT ztrcktrsr_todo2issue_test01.
 
 data spras type spras.
 
-SELECT-OPTIONS s_spras FOR spras.
+SELECT-OPTIONS s_spras FOR spras. "TODO new issue test selection
 
 START-OF-SELECTION.
 
