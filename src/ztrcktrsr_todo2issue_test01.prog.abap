@@ -6,7 +6,7 @@ SELECT-OPTIONS s_spras FOR spras.
 
 START-OF-SELECTION.
 
-  SELECT sptxt            "TODO also select language key
+  SELECT sprsl, sptxt
     FROM t002t INTO TABLE @DATA(langs)
    WHERE sprsl IN @s_spras
      and spras  = @sy-langu.
