@@ -1,8 +1,16 @@
 REPORT ztrcktrsr_todo2issue_test01.
 
-*TODO define correct rollname
-PARAMETERS p_test TYPE c LENGTH 10.
+data spras type spras.
+
+SELECT-OPTIONS s_spras FOR spras.
 
 START-OF-SELECTION.
 
-  WRITE: / p_test. "TODO Replace write with ALV
+  SELECT sptxt            "TODO also select language key
+    FROM t002t INTO TABLE @DATA(langs)
+   WHERE sprsl IN @s_spras
+     and spras  = @sy-langu.
+
+  LOOP AT langs INTO DATA(lang). "TODO use ALV grid for display
+    WRITE: / lang-sptxt.
+  ENDLOOP.
