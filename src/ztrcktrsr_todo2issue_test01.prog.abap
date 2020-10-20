@@ -6,6 +6,12 @@ SELECT-OPTIONS s_spras FOR spras.
 
 START-OF-SELECTION.
 
+  "TODO use API for selecting language keys
+  " reason: this is just a test for multiple
+  " lines comment in the issue body
+  " maybe this works
+  " labels: enhancement, help wanted
+
   SELECT sprsl, sptxt
     FROM t002t INTO TABLE @DATA(langs)
    WHERE sprsl IN @s_spras
