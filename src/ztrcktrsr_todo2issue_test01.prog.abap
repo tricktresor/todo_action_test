@@ -18,7 +18,6 @@ START-OF-SELECTION.
      and spras  = @sy-langu.
 
   "new comment test
-  LOOP AT langs
-  INTO DATA(l_lang). "TODO use ALV grid for display
+  LOOP AT langs INTO DATA(l_lang). "TODO use ALV grid for display
     WRITE: / l_lang-sptxt.
   ENDLOOP.
